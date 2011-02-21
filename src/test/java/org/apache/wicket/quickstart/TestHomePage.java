@@ -1,6 +1,8 @@
-package org.apache.wicket;
+package org.apache.wicket.quickstart;
 
 import junit.framework.TestCase;
+import org.apache.wicket.quickstart.HomePage;
+import org.apache.wicket.quickstart.WicketApplication;
 import org.apache.wicket.util.tester.WicketTester;
 
 /**

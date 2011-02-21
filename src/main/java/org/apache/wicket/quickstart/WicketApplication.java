@@ -1,4 +1,4 @@
-package org.apache.wicket;
+package org.apache.wicket.quickstart;
 
 import org.apache.wicket.protocol.http.WebApplication;
 

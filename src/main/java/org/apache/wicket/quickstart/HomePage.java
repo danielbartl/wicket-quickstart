@@ -1,4 +1,4 @@
-package org.apache.wicket;
+package org.apache.wicket.quickstart;
 
 import org.apache.wicket.PageParameters;
 import org.apache.wicket.markup.html.basic.Label;
