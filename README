@@ -11,3 +11,10 @@ in order to execute Gradle while using so called Gradle Deamon
 It will make your build significantly faster.
 
 For more details about Gradle see http://www.gradle.org!
+
+In case you don't have Gradle already installed on your system you can use provided Gradle Wrapper.
+If you run Gradle with ./gradlew, Gradle checks if a Gradle distribution for the wrapper is available.
+If not it tries to download it, otherwise it delegates to the gradle command of this distribution with all the
+arguments passed originally to the gradlew command.
+
+The gradlew command can be used exactly the same way as the gradle command.
