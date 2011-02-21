@@ -3,7 +3,7 @@ apply plugin: 'jetty'
 
 group = 'org.apache.wicket'
 artifactId = 'quickstart'
-releaseVersion = 0.1
+version = 0.1
 sourceCompatibility = 1.5
 
 wicketVersion = '1.4.15'
