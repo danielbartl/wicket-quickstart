@@ -1,0 +1,13 @@
+Type "gradle build" in order to build the wicket quickstart project with Gradle.
+
+Type "gradle jettyRun" in order to start the quickstart wicket app in Jetty.
+
+Include the following line into your .bash_profile script (or according one for your system):
+
+export GRADLE_OPTS="-Dorg.gradle.daemon=true"
+
+in order to execute Gradle while using so called Gradle Deamon
+(a Java process that constantly runs in the background and executes builds on Gradle’s behalf).
+It will make your build significantly faster.
+
+For more details about Gradle see http://www.gradle.org!
