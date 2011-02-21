@@ -1,0 +1,44 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+group = 'org.apache.wicket'
+artifactId = 'quickstart'
+releaseVersion = 0.1
+sourceCompatibility = 1.5
+
+wicketVersion = '1.4.15'
+jettyVersion = '6.1.25'
+slf4jVersion = '1.5.8'
+log4jVersion = '1.2.14'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+            srcDir 'src/main/java'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.wicket', name: 'wicket', version: wicketVersion
+    compile group: 'org.apache.wicket', name: 'wicket-extensions', version: wicketVersion
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: slf4jVersion
+    compile group: 'log4j', name: 'log4j', version: log4jVersion
+    testCompile group: 'junit', name: 'junit', version: '4.8.1'
+    testCompile group: 'org.mortbay.jetty', name: 'jetty', version: jettyVersion
+    testCompile group: 'org.mortbay.jetty', name: 'jetty-util', version: jettyVersion
+    testCompile group: 'org.mortbay.jetty', name: 'jetty-management', version: jettyVersion
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '0.9.2'
+}
+
